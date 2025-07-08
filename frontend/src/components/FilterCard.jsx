@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { setSearchQuery } from "../redux/jobSLice";
+import { setSearchQuery } from "../redux/jobSlice";
 
 const filterData = [
   {
