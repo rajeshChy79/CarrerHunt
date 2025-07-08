@@ -103,7 +103,7 @@ export const login=async(req,resp)=>{
       role:user.role,
       profile:user.profile,
     }
-    return resp.status(200).cookie('token',token,{maxAge:1*24*60*60*1000,httpOnly:true,sameSite:'strict'}).json({
+    return resp.status(200).cookie('token',token,{maxAge:1*24*60*60*1000,httpOnly:true,sameSite:'None',secure:true}).json({
       message:`welcome back ${user.fullName}`,
       user,
       success:true
